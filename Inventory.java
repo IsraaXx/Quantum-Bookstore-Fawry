@@ -25,7 +25,12 @@ public class Inventory {
         bookQuantities.put(bookType,bookQuantities.getOrDefault(bookType, 0) + 1);
         books.put(book.getISBN(),book);
         Totalquantity++;    
-    }
+         System.out.println("Quantum Bookstore: Added book -> " 
+        + book.getTitle() + " (" + book.getISBN() + "), Year: " 
+        + book.getPublicationYear()
+        + ", Price: " + book.getPrice());
+}
+    
 
     public int getQuantityOfBook(Class<? extends Book> bookType) {
         return bookQuantities.getOrDefault(bookType, 0);
@@ -49,7 +54,15 @@ public List<Book> removeOutdatedBooks(int currentYear, int maxAge) {
             }
         }
 
-        System.out.println("List of Removed outdated books: " + removed.size());
+
+    if (removed.isEmpty()) {
+        System.out.println("Quantum Bookstore: No outdated books removed.");
+    } else {
+        System.out.println("Quantum Bookstore: Removed outdated books:");
+        for (Book b : removed) {
+            System.out.println("  -> " + b.getTitle() + " (" + b.getISBN() + ")");
+        }
+    }
         return removed;
     }
 

@@ -41,18 +41,18 @@ public static void main(String[] args) {
         System.out.println("Total books in inventory: " + store.getInventoryTotalQuantity());
         System.out.println("Quantity of PaperBooks: " + store.getSpecificBookQuantity(PaperBook.class));
         System.out.println("Quantity of Ebooks: " + store.getSpecificBookQuantity(Ebook.class));
-
+        System.out.println("Quantity of DemoBooks: " + store.getSpecificBookQuantity(Demobook.class));
         store.removeOutdatedBooks(2025, 10);
  
         System.out.println("Total books in inventory after removing outdated books: " + store.getInventoryTotalQuantity());
         System.out.println("======================================================="); 
+
+
         store.BuyBook("111", 1, "user@example.com", "123 Main St");
         System.out.println("-------------------------------------------------------"); 
         store.BuyBook("222", 1, "user@example.com", "123 Main St");
         System.out.println("-------------------------------------------------------"); 
         store.BuyBook("111", 2, "user@example.com", "123 Main St");
-        
-
         System.out.println("Final total books in inventory: " + store.getInventoryTotalQuantity());
     }
 
