@@ -56,7 +56,7 @@ Full run result:
 
 **Code:**
 
-![Remove Books Code](images/s4.png)
+![Remove Books Code](Image/s4.png)
 
 **Output:**
 
