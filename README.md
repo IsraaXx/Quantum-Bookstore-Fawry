@@ -27,8 +27,9 @@ Run `BookStoreMain.java` to test:
 
 ## 🖥️ Sample Output
 
-Full run result:
+Full run code:
 ![Full Case](Image/s2.png)
+Full run result:
 ![Full Output](Image/s3.png)
 
 ---
