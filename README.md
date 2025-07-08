@@ -22,15 +22,12 @@ Run `BookStoreMain.java` to test:
 
 
 ---
-
-## 🖼️ Overview
-
 ## 🖥️ Sample Output
 
----
 ### Full run code:
 ![Full Case](Image/s2.png)
 ---
+
 ---
 ### Full run result:
 ![Full Output](Image/s3.png)
