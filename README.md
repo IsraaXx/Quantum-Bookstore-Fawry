@@ -1,4 +1,4 @@
-# Quantum-Bookstore-Fawry-Challenge
+# Quantum-Bookstore-Fawry
 
 Simple Java project for managing an online bookstore.
 
